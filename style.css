@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+body{
+  overflow-x: hidden;
+  font-family: 'Lato',sans-serif;
+  color: #505962;
+}
+
+/*============= NAVIGATION SECTION =============*/
+.navbar{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background-color: rgba(0, 0, 0, 0.6) !important;
+  }
+  .navbar-brand img{
+    height: 2rem;
+  }
+  .navbar nav li{
+    padding-right: .7rem;
+  }
+  .navbar-dark .navbar-nav .nav-link{
+    color: white;
+    padding-top: .8rem;
+  }
+  .navbar-dark .navbar-nav .nav-link.active,
+  .navbar-dark .navbar-nav .nav-link:hover{
+    color: #1ebba3;
+  }
+/*============= Search SECTION =============*/
+.search-box{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+.search-box:hover >.search-text{
+    width: 240px;
+    padding: 0 6px ;
+}
+.search-box:hover >.search-btn{
+    background: white;
+}
+.search-btn{
+    color: #e84118;
+    float: right;
+    width: 20px;
+    height:20px;
+    top: 10%;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2;
+}
+.search-text{
+    border: none;
+    background:none;
+    outline: none;
+    float: left;
+    padding-bottom:6px;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+ /*============= Slider SECTION =============*/
+
+body,
+#slider,
+.wrap,
+.slide-content {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.wrap {
+  position: relative;
+  filter: brightness(70%);;
+
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.slide1 {
+  background-image: url("images/img1.jpg");
+}
+.slide2 {
+  background-image: url("images/img2.jpg");
+}
+.slide3 {
+  background-image:url("images/img3.jpg");
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-content span {
+  font-size: 5rem;
+  color: #000;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#arrow-left {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent #000 transparent transparent;
+  left: 0;
+  margin-left: 30px;
+}
+
+#arrow-right {
+  border-width: 30px 0 30px 40px;
+  border-color: transparent transparent transparent #000;
+  right: 0;
+  margin-right: 30px;
+}
+
+/*============= Login SECTION =============*/
+.loginsection {
+    background-color: #2f3640 !important;
+    color: white;
+  }
+  .loginsection h1{
+
+    color: white;
+    padding-left: 40px;
+  }
+  .loginsection button{
+    margin-left: 40px;
+  }
+
+
+/*============= Reservation SECTION =============*/
+section#reservation{
+  background: burlywood;
+}
+.form-reservation {
+  background-image: url(images/menu-bg.jpg);
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.form-reservation .column {
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+.form-reservation .column > span {
+  float: left;
+  width: 50%;
+  padding-right: 8px;
+  position: relative;
+}
+.form-reservation .column > span i {
+  color: #000;
+  position: absolute;
+  right: 30px;
+  top: 18px;
+  font-size: 16px;
+}
+.form-reservation .column > span i.fa-clock-o {
+  font-size: 20px;
+  right: 21px;
+  top: 16px;
+}
+.form-reservation .column > span input {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 0;
+  width: 100%;
+  padding: 14px 25px;
+  font-size: 16px;
+  color: #000;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.form-reservation .column > span input:focus {
+  padding-left: 30px;
+}
+.form-reservation .column > span:last-child {
+  float: right;
+  padding-right: 0;
+  padding-left: 8px;
+}
+.form-reservation .column textarea {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 0;
+  width: 100%;
+  height: 144px;
+  padding: 20px 25px;
+  font-size: 16px;
+  color: #000;
+  resize: none;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.form-reservation .column textarea:focus {
+  padding-left: 30px;
+}
+.form-reservation .submit-btn {
+  padding-top: 26px;
+  text-align: center;
+}
+.form-reservation .submit-btn button {
+  padding: 20px 80px;
+  line-height: 16px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #cf9a67;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-size: 16px;
+  border: 0;
+  letter-spacing: 1px;
+  position: relative;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  margin-bottom: 3%;
+}
+.form-reservation .submit-btn button:hover {
+  color: #cf9a67;
+  background-color: #eaeaea;
+}
+
+/* REsponsive */
+/*------------------------------------------------------------------
+[1. Override Responsive Mode 1200px]
+--------------------------------------------------------------------*/
+@media (max-width: 1200px) {
+
+  #reservation .form-reservation {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+/*------------------------------------------------------------------
+[3. Override Responsive Mode 767px]
+--------------------------------------------------------------------*/
+@media (max-width: 767px) {
+
+  #reservation .col-md-7 {
+    padding: 0;
+  }
+
+  .form-reservation .column {
+    margin-bottom: 20px !important;
+  }
+
+  .form-reservation .column > span {
+    width: 100% !important;
+    padding: 0 !important;
+    margin-bottom: 20px !important;
+  }
+  .form-reservation .column > span:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+/*============= Footer SECTION =============*/
+p{
+  color: #999;
+  line-height: 25px;
+}
+h2,h3{
+  color: #fff;
+}
+h2{
+  font-size: 18px;
+}
+.footer-top{
+  background: #111;
+  padding: 80px 0;
+}
+.segment-one h3{
+  font-family: Courgette;
+  color: #fff;
+  letter-spacing: 3px;
+  margin: 10px 0;
+}
+.segment-two h2{
+  color: #fff;
+  font-family: Poppins;
+  text-transform: uppercase;
+}
+.segment-two h2::before{
+  content: '|';
+  color: #c65039;
+  padding-right: 10px;
+}
+.segment-two ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.segment-two ul li a{
+  color: #999;
+}
+.segment-three h2{
+  color: #fff;
+  font-family: Poppins;
+  text-transform: uppercase;
+}
+.segment-three h2::before{
+  content: '|';
+  color: #c65039;
+  padding-right: 10px;
+}
+.segment-three a{
+  background: #494848;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+}
+.segment-three a i{
+  font-size: 20px;
+  color: #fff;
+  padding: 10px 12px;
+}
+
+.segment-four h2{
+  color: #fff;
+  font-family: Poppins;
+  text-transform: uppercase;
+}
+.segment-four h2::before{
+  content: '|';
+  color: #c65039;
+  padding-right: 10px;
+}
+.segment-four form input[type=submit]{
+  background: #c65039;
+  border: none;
+  padding: 3px 15px;
+  margin-left:6px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.footer-bottom-text{
+  text-align: center;
+  background: #000;
+  line-height: 75px;
+}
+/* Responsive CSS */
+@media only screen and (min-width:768px) and (max-width:991px){
+  .md-mb-30{
+      margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width : 767px){
+  .sm-mb-30{
+      margin-bottom: 30px;
+  }
+  .footer-top{
+      padding: 50px 0;
+  }
+}
+
+/* Start Animation */
+/* first slide */
+.ml2 {
+  font-weight: 300;
+  font-size: 3.5em;
+}
+.ml2 .letter {
+  display: inline-block;
+  line-height: 1em;
+  color: white;
+}
+
+
+
+/*Second slide*/
+.ml4 {
+  position: relative;
+  font-weight: 900;
+  font-size: 4.5em;
+}
+.ml4 .letters {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0.3em;
+  right: 0;
+  opacity: 0;
+}
+
+/* Third animation */
+.ml15 {
+  font-weight: 800;
+  font-size: 3.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.ml15 .word {
+  display: inline-block;
+  line-height: 1em;
+}
+
+
+/* End Animation */
+
+/*  TABLES */
+
+.section-suptitle {
+  font-size: 30px;
+  color: #cf9b67;
+  font-family: "Architects Daughter";
+  letter-spacing: 1px;
+  display: block;
+  line-height: 32px;
+}
+
+.section-title,
+.pagination {
+  margin: 14px 0 34px;
+  line-height: 42px;
+  padding-bottom: 35px;
+  position: relative;
+  font-size: 40px;
+  font-family: "Oswald";
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+::selection {
+  background-color: #cf9b67;
+  color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.white-font {
+  color: #fff;
+}
+
+p, ul {
+  margin: 0;
+}
+
+.carousel-table .table-page .item {
+  cursor: pointer;
+  float: left;
+  text-align: center;
+  width: 20%;
+  padding: 17px 0;
+  margin-bottom: 30px;
+  position: relative;
+  min-height: 163px;
+}
+
+.carousel-table .table-page .item span {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  color: #909090;
+  font-size: 18px;
+  display: block;
+  text-align: center;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 4;
+  width: 100%;
+}
+.carousel-table .table-page .item p {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  color: #fff;
+  font-size: 16px;
+  display: none;
+  text-align: center;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 100%;
+  text-transform: capitalize;
+}
+
+.carousel-table .table-page .item.reserved p {
+  display: block;
+}
+.carousel-table .table-page .item.reserved:before {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 9;
+}
+/* selectionner les tables */
+.carousel-table .table-page .item:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(207, 155, 103, 0.8);
+  z-index: 3;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+/* hover les tables */
+.carousel-table .table-page .item:hover:before, .carousel-table .table-page .item.current:before {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+
+/*------------------------------------------------------------------
+[2. Override Responsive Mode 991px]
+--------------------------------------------------------------------*/
+@media (max-width: 991px) {
+  .carousel-table .table-page .item {
+    width: 33.33%;
+  }
+}
+
+/*------------------------------------------------------------------
+[3. Override Responsive Mode 767px]
+--------------------------------------------------------------------*/
+@media (max-width: 767px) {
+  .carousel-table .table-page .item {
+    width: 50%;
+  }
+}
+
+/*------------------------------------------------------------------
+[5. Override Responsive Mode 460px]
+--------------------------------------------------------------------*/
+@media (max-width: 460px) {
+  .carousel-table .table-page .item {
+    width: 100%;
+    min-height: auto;
+  }
+}
